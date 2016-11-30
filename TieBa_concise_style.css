@@ -1,0 +1,69 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("tieba.baidu.com") {
+
+    /* ------------------------ =贴吧内 ------------------------------*/
+    /* 在每个贴后显示该贴子的发帖时间,避免挖坟 */
+    .is_show_create_time {
+        display: block !important;
+        font-size: 110%;
+        color: orange;
+    }
+
+    /*扩宽 主题作者的名字容器 的宽度，贴吧默认6个字就显示省略号了*/
+    .frs-author-name {
+        max-width: 100px !important;
+    }
+
+    /* 主题作者的名字后的'印记'
+       右侧 皇冠身份 兑换会员
+       右上角 点击到商城购买道具
+       右上角 手机客户端下载
+       右上角 T豆账单
+       右上角 应用中心
+       右上角 会员官网
+       吧内头图右方的礼物（贡献榜）
+       贴吧底部横向滚动条的罪魁祸首
+       顶部搜索框弹出的'大伙正在聊'、'吧友热议', '搜索风云' */
+    .frs_bright_icons,
+    .celebrity,
+    .u_tbmall,
+    .u_app,
+    .u_wallet,
+    .u_appcenterEntrance,
+    .u_joinvip,
+    .gift-goin,
+    .header_divider,
+    .operation_item, .break_title:nth-child(1), .bdfengyun {
+        display: none !important;
+    }
+
+    /* ----------------------- =个人主页 ---------------------------*/
+    /* 会员一键签到按钮
+    个人主页右方 t豆 蓝钻等无用信息
+    个人主页右方 访客、关注列表
+    贴吧个人主页的'热门动态',所属的贴子从不更新,整整几年都是那几个
+    顶部搜索框弹出的'更多热议话题' */
+    .onekey_btn,
+    .userinfo_scores,
+    .right_aside,
+    .ihome_hot_feed,
+    .tbtopic {
+        display: none !important;
+    }
+
+    /* 调整头像及下方内容与搜索框之间过大的距离*/
+    .headinfo_wrap {
+        height: 90px !important;
+    }
+
+    /*  加宽'关注的吧'列表宽度*/
+    .content_wrap {
+        width: 960px;
+    }
+
+    /* 修改加宽后的列表背景*/
+    .left_aside, .ihome_left_aside {
+        background: #f5f7fa;
+    }
+}
