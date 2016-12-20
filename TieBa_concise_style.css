@@ -15,28 +15,21 @@
         max-width: 100px !important;
     }
 
-    /* 今日话题
-       主题作者的名字后的'印记'
+    /* 主题作者的名字后的'印记'
+       右上角 '百度首页'
+       右上角 '会员'
        右侧 皇冠身份 兑换会员
-       右上角 点击到商城购买道具
-       右上角 手机客户端下载
-       右上角 T豆账单
-       右上角 应用中心
-       右上角 会员官网
-       吧内头图右方的礼物（贡献榜）
-       贴吧底部横向滚动条的罪魁祸首
        顶部搜索框弹出的'大伙正在聊'、'吧友热议', '搜索风云' */
-    .interview,
     .frs_bright_icons,
+    .u_bdhome,
+    .u_member,
     .celebrity,
-    .u_tbmall,
-    .u_app,
-    .u_wallet,
-    .u_appcenterEntrance,
-    .u_joinvip,
-    .gift-goin,
-    .header_divider,
     .operation_item, .break_title:nth-child(1), .bdfengyun {
+        display: none !important;
+    }
+
+    /*今日话题*/
+    .interview {
         display: none !important;
     }
 
