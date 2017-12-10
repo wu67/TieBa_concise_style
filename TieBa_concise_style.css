@@ -61,4 +61,10 @@
     .left_aside, .ihome_left_aside {
         background: #f5f7fa;
     }
+    
+    /* 隐藏 右方的 大家都在搜*/
+    .search_back_box {
+        height: 0;
+        display: none;
+    }
 }
